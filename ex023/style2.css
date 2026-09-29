@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+table{
+    border-collapse: collapse;    
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+caption{
+    border: 1px solid black;
+    padding: 10px;
+    background-color: rgb(161, 161, 161);
+    font-weight: bold;
+    font-size: large;
+
+}
+
+
+
+td, th{
+    border: 1px solid black;
+    padding: 10px;
+}
