@@ -1,4 +1,5 @@
 @charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 /* Estilo para telas*/
 
 *{
@@ -11,8 +12,14 @@ html{
     font-size: 16px;
 }
 
+body{
+    background-color: rgb(196, 196, 196);
+}
+
 header{   
     background-image: linear-gradient(to top, rgb(77, 77, 77), rgb(133, 133, 133));
+    font-family: Oswald;
+    box-shadow: 1px 1px 5px black;
 }
 header > h1{
     padding: 25px;
@@ -35,7 +42,10 @@ header > menu > ul > li:hover{
 }
 
 article{
+    background-color: white;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.534);
     width: 450px;
+    height: 100vh;
     display: block;
     margin: auto; 
     padding: 20px;
