@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <h1>Exemplo de formulário</h1>
+        <fieldset>
+             <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="isxmas">
+                    <label for="isxmas">Maculino</label>
+            <br>
+                <input type="radio" name="sexo" id="isxfem">
+                    <label for="Isxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+                <input type="checkbox" name="bas" id="ibas"> 
+                    <label for="ibas">Basquete</label>
+            <br>
+                <input type="checkbox" name="fut" id="ifut">
+                    <label for="ifut">Futebol</label>  
+            <br>
+                 <input type="checkbox" name="vol" id="ivol"> 
+                    <label for="ivol">Vôlei</label>
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tudo misturado</legend>
+            <p>
+                <label for="icor">Cor:</label>
+                    <input type="color" name="cor" id="icor">
+            </p>
+            <p>
+                <label for="inivel">Nivel de satisfação:</label>
+                    <input type="range" min="1" max="5">
+            </p>
+            <p>
+                <label for="ifoto">Foto/Aquivo:</label>
+                    <input type="file" name="foto"
+                    id="ifoto">
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        
+    </form>    
+</body>
+</html>
