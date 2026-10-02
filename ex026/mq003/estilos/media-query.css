@@ -1,6 +1,82 @@
 @charset "UTF-8";
 /*demais*/
+/*Typical Device Breakpoints
+-------------------------
 
+Pequenas telas: até 600px
+Celular: 600px até 768px
+Tablet: 769px até 992px
+Desktop: 993px ate 1200px
+Grandes telas: acima de 1200px
+
+---------------------------
+*/
+
+/*IMPRESSÃO*/
 @media print{
+   body{
+    background-image: url(../imagens/back-print.jpg);
+   }
+
+   main{
+    border: 2px solid black;
+
+   }
+
+   main h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: none;
+color: black;}
+}
+/*
+---> (config p telas pqns, já foram config no Style.css)
+@media  screen and (max-width: 600px) {
     
 }
+
+@media screen and (min-widht: 600px) and (max-widht: 268px) {
+    
+}
+*/
+
+/*TABLET*/
+@media screen and (min-width: 769px) and (max-width:992px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+img#cel{display: none;}
+img#tab{display: block;}
+img#imp{display: none;}
+img#pc{display: none;}
+img#tv{display: none;}
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 993px) and (max-width:1200px){
+
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+img#cel{display: none;}
+img#tab{display: none;}
+img#imp{display: none;}
+img#pc{display: block;}
+img#tv{display: none;}
+
+}
+
+/*TELAS GRANDES*/
+@media screen and (min-width: 1200px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+img#cel{display: none;}
+img#tab{display: none;}
+img#imp{display: none;}
+img#pc{display: none;}
+img#tv{display: block;}
+}
+
