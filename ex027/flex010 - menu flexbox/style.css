@@ -1,0 +1,90 @@
+@charset "UTF-8";
+ *{
+    padding: 0px;
+    margin: 0px;
+   box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ body{
+    font-size: 1em;
+    background-color: lightgray;
+    height: 100vh;
+    width: 100vw;
+ }
+
+ header{
+    background-color: darkgray;
+    color: white;
+    padding: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.274);
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+ }
+ 
+ header > h1{
+    padding: 10px 0px;
+    flex: 0 0 200px;
+    /*border: 1px dotted black;*/
+
+ }
+
+ header > nav{
+    display: flex;
+    flex-flow:  row wrap;
+    justify-content: flex-end;
+    /*border: 1px dotted black;*/
+
+    flex: 1 1 200px;
+    min-width: 0px;
+    
+ }
+
+
+ header > nav > a {
+    
+    background-color: rgb(75, 75, 75);
+    padding: 8px;
+    margin: 0px 5px 0px 0px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+     transition: 0.3s; 
+    
+    
+ }
+
+
+
+ header > nav > a:hover{
+    background-color:  rgba(126, 126, 126, 0.788);
+    color: black;
+   
+   
+   
+   
+ }
+ 
+ main{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.274);
+ }
+
+ main > p{
+    text-indent: 10px;
+    text-align: justify;
+ }
+
+ main > h2{
+    text-align: center;
+    padding: 10px;
+ }
+ 
